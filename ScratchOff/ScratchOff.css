@@ -1,0 +1,163 @@
+﻿body {
+    padding:0;
+    margin:0;
+}
+
+.scratch
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.scratch img
+{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.scratch canvas
+{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.inputcard
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+}
+.number1
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:0;
+    left:66.6%;
+}
+.number2
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:20%;
+    left:66.6%;
+}
+.number3
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:40%;
+    left:66.6%;
+}
+.number4
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:60%;
+    left:66.6%;
+}
+.number5
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:66.6%;
+}
+.number6
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:0;
+    left:33.3%;
+}
+.number7
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:20%;
+    left:33.3%;
+}
+.number8
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:40%;
+    left:33.3%;
+}
+.number9
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:60%;
+    left:33.3%;
+}
+.number10
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:33.3%;
+}
+.number11
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.number12
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:20%;
+    left:0;
+}
+.number13
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:40%;
+    left:0;
+}
+.number14
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:60%;
+    left:0;
+}
+.number15
+{
+    width:33.3%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:0;
+}

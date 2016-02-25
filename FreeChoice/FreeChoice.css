@@ -1,0 +1,7 @@
+﻿html{background:#F6F6F1 url("http://jsdashi.com/demo/tarot/bg-content.png")}
+body,div,span,p,var,em,strong,a,h1,h2,h3,h4,h5,h6,input,textarea,ul,li,img{margin:0;padding:0;font-family:Arial;}
+.box div{width:200px;height:337px;display:block;position:absolute;top:50px;left:100px;backface-visibility: hidden;}
+#back{background:url("../Images/Poker_Watcher2/back.png") 0 0 no-repeat;}
+#front{background:url("../Images/Poker_Watcher2/spade1.png") 0 0 no-repeat;}
+.flip{transform: rotate3d(0,1,0,0deg);transition-duration: 0.4s;}
+.fliped{transform: rotate3d(0,1,0,-180deg);transition-duration: 0.4s;}

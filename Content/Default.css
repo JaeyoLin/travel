@@ -1,0 +1,149 @@
+﻿body 
+{
+    padding:0;
+    margin:0;
+}
+
+.show 
+{
+    opacity:1;
+    -o-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+}
+.hide
+{
+    opacity:0; 
+}
+
+.BeforeLogin
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align:center;
+}
+
+.BeforeLogin_Img
+{
+    z-index:1;
+    position:absolute;
+    right:15%;
+    top:15%;
+    width:70%;
+}
+.turnRight
+{
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); 
+    -webkit-transform:rotate(10deg);
+}
+.turnLeft
+{
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg); 
+    -webkit-transform:rotate(-10deg);
+}
+
+.BeforeLogin_Logo
+{
+    z-index:1;
+    position:absolute;
+    top:40%;
+    left:50%;
+    margin-left:-110px;
+}
+.AfterLogin
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align:center;
+}
+
+.AfterLogin_Back
+{
+    z-index:-1;
+    height:98%;
+    width: 100%;
+}
+
+.AfterLogin_AcaanTool
+{
+    z-index:1;
+    position:absolute;
+    left:5%;
+    top:15%;
+    color:Black;
+    font-size:40px;
+    text-decoration:underline;
+    font-family:Times New Roman;
+}
+
+.AfterLogin_WebAcaan
+{
+    z-index:1;
+    position:absolute;
+    left:5%;
+    top:30%;
+    color:Black;
+    font-size:40px;
+    text-decoration:underline;
+    font-family:Times New Roman;
+}
+
+.AfterLogin_ScratchOff
+{
+    z-index:1;
+    position:absolute;
+    left:5%;
+    top:45%;
+    color:Black;
+    font-size:40px;
+    text-decoration:underline;
+    font-family:Times New Roman;
+}
+
+.AfterLogin_Logo
+{
+    z-index:1;
+    position:absolute;
+    right:5%;
+    bottom:10%;
+}
+
+.message
+{
+    z-index:0;
+    width:100%;
+    position:absolute;
+    text-align:center;
+    font-size:40px;
+    color:white;
+    bottom:10%;
+    
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    
+}
+
+.message1
+{
+    z-index:0;
+    width:100%;
+    position:absolute;
+    text-align:center;
+    font-size:40px;
+    color:black;
+    top:40%;
+}
