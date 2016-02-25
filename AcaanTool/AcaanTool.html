@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="zh_tw">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>AcaanTool</title>
+
+    <script src="../Scripts/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.preload.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../Scripts/pace.min.js"></script>
+    <script src="../Poker/Poker_Steven.js" type="text/javascript"></script>
+    <script src="AcaanTool.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="../Content/jquery.mobile-1.4.2.css"/>
+    <link rel="stylesheet" href="../Content/pace-theme-barber-shop.css" />
+    <link rel="stylesheet" href="AcaanTool.css"/>
+</head>
+<body>
+    <div data-role="header" data-theme="a"> 
+	    <h1 style="text-align:left; margin-left:10px;">Misdirection's Mystery</h1> 
+    </div> 
+    <div id="div_Input" data-role="collapsibleset" data-theme="a" data-content-theme="a">
+        <div data-role="collapsible">
+            <h3>花色</h3>
+            <a href="#" onclick="ClickColor('spade');"><img id="img_spade" alt="" src="Images/spade.png" width="49%"/></a>
+            <a href="#" onclick="ClickColor('heart');"><img id="img_heart" alt="" src="Images/heart.png" width="49%"/></a>
+            <br/>
+            <a href="#" onclick="ClickColor('diamond');"><img id="img_diamond" alt="" src="Images/diamond.png" width="49%"/></a>
+            <a href="#" onclick="ClickColor('club');"><img id="img_club" alt="" src="Images/club.png" width="49%"/></a>
+        </div>
+        <div data-role="collapsible">
+            <h3>點數</h3>
+            <a href="#" onclick="ClickNumber('1');"><img id="img_Number1" alt="" src="Images/number_1.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('2');"><img id="img_Number2" alt="" src="Images/number_2.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('3');"><img id="img_Number3" alt="" src="Images/number_3.png" width="32%"/></a>
+            <br/>
+            <a href="#" onclick="ClickNumber('4');"><img id="img_Number4" alt="" src="Images/number_4.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('5');"><img id="img_Number5" alt="" src="Images/number_5.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('6');"><img id="img_Number6" alt="" src="Images/number_6.png" width="32%"/></a>
+            <br/>
+            <a href="#" onclick="ClickNumber('7');"><img id="img_Number7" alt="" src="Images/number_7.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('8');"><img id="img_Number8" alt="" src="Images/number_8.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('9');"><img id="img_Number9" alt="" src="Images/number_9.png" width="32%"/></a>
+            <br/>
+            <a href="#" onclick="ClickNumber('10');"><img id="img_Number10" alt="" src="Images/number_10.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('11');"><img id="img_Number11" alt="" src="Images/number_11.png" width="32%"/></a>
+            <a href="#" onclick="ClickNumber('12');"><img id="img_Number12" alt="" src="Images/number_12.png" width="32%"/></a>
+            <br/>
+            <a href="#" onclick="ClickNumber('13');"><img id="img_Number13" alt="" src="Images/number_13.png" width="32%"/></a>
+        </div>
+        <div data-role="collapsible">
+            <h3>數字</h3>
+            <input id="txt_Number" type="text" readonly="readonly" style="text-align:right;" value="0"/>
+            <br/>
+            <button onclick="ClickIndex('7');" id="btn_7" class="ui-btn ui-btn-inline" style="width:29%">7</button>
+            <button onclick="ClickIndex('8');" id="btn_8" class="ui-btn ui-btn-inline" style="width:29%">8</button>
+            <button onclick="ClickIndex('9');" id="btn_9" class="ui-btn ui-btn-inline" style="width:29%">9</button>
+            <br/>
+            <button onclick="ClickIndex('4');" id="btn_4" class="ui-btn ui-btn-inline" style="width:29%">4</button>
+            <button onclick="ClickIndex('5');" id="btn_5" class="ui-btn ui-btn-inline" style="width:29%">5</button>
+            <button onclick="ClickIndex('6');" id="btn_6" class="ui-btn ui-btn-inline" style="width:29%">6</button>
+            <br/>
+            <button onclick="ClickIndex('1');" id="btn_1" class="ui-btn ui-btn-inline" style="width:29%">1</button>
+            <button onclick="ClickIndex('2');" id="btn_2" class="ui-btn ui-btn-inline" style="width:29%">2</button>
+            <button onclick="ClickIndex('3');" id="btn_3" class="ui-btn ui-btn-inline" style="width:29%">3</button>
+            <br/>
+            <button onclick="ClickIndex('0');" id="btn_0" class="ui-btn ui-btn-inline" style="width:62%">0</button>
+            <button onclick="ClickIndex('c');" id="btn_C" class="ui-btn ui-btn-inline" style="width:29%">C</button>
+        </div>
+    </div>
+    <button id="btn_Check" class="ui-btn" onclick="Check()">確認</button>
+    
+    <div id="div_Result">
+        <img id="img_ResultBack1" alt="" src="Images/18042371_214923429000_2.png" class="ResultBack1"/>
+        <img id="img_ResultBack2" alt="" src="Images/18042371_214923429000_2.png" class="ResultBack2"/>
+        <img id="img_Card" alt="" src="" class="result_card"/>
+        <span id="span_Number" class="result_index"></span>
+
+        <img id="img_KeyCard" alt="" src="" class="key_card"/>
+        
+        <img id="img1" alt="" src="" class="card_back1"/>
+        <img id="img2" alt="" src="" class="card_back2"/>
+        <img id="img3" alt="" src="" class="card_front1"/>
+        <img id="img4" alt="" src="" class="card_front2"/>
+        <img id="img5" alt="" src="" class="card_front3"/>
+        <img id="img6" alt="" src="" class="card_front4"/>
+        <img id="img7" alt="" src="" class="card_front5"/>
+        <img id="img8" alt="" src="" class="card_front6"/>
+
+        <img id="img9" alt="" src="../Images/ftpg_bg.jpg" class="backimg"/>
+    </div>
+
+    <div data-role="footer" data-theme="a" data-position="fixed"> 
+	        <h1>Copyright 2014 MSM All rights reserved</h1> 
+        </div> 
+</body>
+</html>
