@@ -1,0 +1,291 @@
+﻿
+body 
+{
+    padding:0;
+    margin:0;
+}
+
+.message
+{
+    z-index:0;
+    width:100%;
+    position:absolute;
+    text-align:center;
+    font-size:35px;
+    color:white;
+    top:40%;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.color
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.color img 
+{
+    z-index:-1;
+    height:100%;
+    width: 100%;
+}
+.spade
+{
+    z-index:0;
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.heart
+{
+    z-index:0;
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:0px;
+    left:50%;
+}
+
+.diamond
+{
+    z-index:0;
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:50%;
+    left:0px;
+}
+
+.club
+{
+    z-index:0;
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+.number1
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:66.6%;
+    top:0px;
+}
+
+.number2
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:66.6%;
+    top:25%;
+}
+
+.number3
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:66.6%;
+    top:50%;
+}
+
+.number4
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:66.6%;
+    top:75%;
+}
+
+.number5
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:33.3%;
+    top:0px;
+}
+
+.number6
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:33.3%;
+    top:25%;
+}
+
+.number7
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:33.3%;
+    top:50%;
+}
+
+.number8
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:33.3%;
+    top:75%;
+}
+
+.number9
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+.number10
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:0px;
+    top:25%;
+}
+
+.number11
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:0px;
+    top:50%;
+}
+
+.number12
+{
+    width:33.3%;
+    height:25%;
+    position:absolute;
+    left:0px;
+    top:75%;
+}
+
+.draggable 
+{
+    text-align:center;
+    width:40%;
+    height:100%;
+    left:10;
+    top:0;
+    position:absolute;
+}
+
+.table
+{
+    width:50%;
+    position:absolute;
+    top:10%;
+    right:2%;
+    z-index:0;
+}
+.card
+{
+    width:16%;
+    left:75%;
+    top:20%;
+    position:absolute;
+    z-index:2;
+    transform:rotate(3deg);
+    -ms-transform:rotate(3deg); 
+    -webkit-transform:rotate(3deg);
+}
+.deck
+{
+    width:42%;
+    left:16%;
+    top:24%;
+    position:absolute;
+    z-index:3;
+    transform:rotate(-22deg);
+    -ms-transform:rotate(-22deg); 
+    -webkit-transform:rotate(-22deg);
+}
+
+.deck1
+{
+    width:67%;
+    position:absolute;
+    left:0;
+    top:15%;
+    z-index:1;
+}
+
+.logo
+{
+    width:20%;
+    position:absolute;
+    left:25%;
+    top:15%;
+    z-index:1;
+}
+
+.number
+{
+    font-size:80px;
+    color:Silver;
+    position:absolute;
+    top:20%;
+    left:55%;
+    z-index:1;
+}
+.result
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.result_back
+{
+    z-index:-1;
+    height:100%;
+    width: 100%;
+}
+.show 
+{
+    opacity:1;
+    -o-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
+}
+.hide
+{
+    opacity:0; 
+}
+
+.First
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height:20%;
+    z-index:1;
+}
