@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>WebAcaan</title>
+    
+    <script type="text/javascript" src="../Scripts/jquery.min.js"></script>    
+    <script type="text/javascript" src="../Scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.preload.min.js" ></script>
+    <script type="text/javascript" src="../Scripts/jquery.ui.touch-punch.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="../Scripts/pace.min.js"></script>
+    <script type="text/javascript" src="../Poker/Poker_Steven.js"></script>
+    <script type="text/javascript" src="WebAcaan.js"></script>
+
+    <link rel="apple-touch-icon" href="Images/icon_mg.png"/>
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="WebAcaan_Portrait.css"/>
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="WebAcaan_Landscape.css"/>
+    <link rel="stylesheet" href="../Content/pace-theme-barber-shop.css" />
+</head>
+<body>
+    <div id="div_color" class="color">
+        <div class="message">首先請你想一個花色</div>
+        <div id="div_Spade" class="spade border" ></div>
+        <div id="div_Heart" class="heart border" ></div>
+        <div id="div_Diamond" class="diamond border"></div>
+        <div id="div_Club" class="club border"></div>
+        
+        <img alt="" src="Images/wt1pg.jpg" />
+    </div>
+    
+    <div id="div_number" class="color">
+        <div class="message">再來請你想一個點數</div>
+        <div id="div_1" class="number1 border"></div>
+        <div id="div_2" class="number2 border"></div>
+        <div id="div_3" class="number3 border"></div>
+        <div id="div_4" class="number4 border"></div>
+        <div id="div_5" class="number5 border"></div>
+        <div id="div_6" class="number6 border"></div>
+        <div id="div_7" class="number7 border"></div>
+        <div id="div_8" class="number8 border"></div>
+        <div id="div_9" class="number9 border"></div>
+        <div id="div_10" class="number10 border"></div>
+        <div id="div_11" class="number11 border"></div>
+        <div id="div_12" class="number12 border"></div>
+        
+        <img alt="" src="Images/wt1pg.jpg" />
+    </div>
+    
+    <div id="div_result" class="result">
+        <input id="hid_StartTime" type="hidden" value="" />
+        <span id="span_number" class="number">0</span>
+        <div id="div_First" class="First" onclick="FirstCard();"></div>
+        <div id="div_draggable" class="draggable">
+            <img id="img_drag" alt="" src="" class="deck"/>
+            <img id="img_deck" alt="" src="Images/deck.png" class="deck1"/>
+        </div>
+        <div class="">
+            <img id="img_table" alt="" src="Images/pad.png" class="table"/>
+            <img id="img_drop" alt="" src="Images/Empty.png" class="card"/>
+        </div>
+        <img id="img_logo" alt="" src="Images/LOGO.png" class="logo"/>
+        <img alt="" src="Images/wood.jpg" class="result_back"/>
+    </div>
+</body>
+</html>
